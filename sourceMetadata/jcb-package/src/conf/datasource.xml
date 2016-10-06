@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<datasources>
+
+  <datasource>
+    <name>default</name>
+    <description>this is a mysql database</description>
+    <factoryClass>com.jeeves.connector.sql.SQLConnectionFactory</factoryClass>
+    <connectionClass>com.jeeves.connector.sql.SQLConnection</connectionClass>
+    <driver>org.gjt.mm.mysql.Driver</driver>
+    <url>jdbc:mysql://localhost/octopus</url>
+    <username>root</username>
+    <password>root</password>
+    <poolGrowAmount>1</poolGrowAmount>
+    <poolMin>1</poolMin>
+    <poolMax>10</poolMax>
+    <checkQuery>select 1 from dual</checkQuery>
+    <timeout>100</timeout>
+   <vendor>mysql</vendor>
+  </datasource>
+
+  <datasource>
+    <name>mysql</name>
+    <description>this is a mysql database</description>
+    <factoryClass>com.jeeves.connector.sql.SQLConnectionFactory</factoryClass>
+    <connectionClass>com.jeeves.connector.sql.SQLConnection</connectionClass>
+    <driver>org.gjt.mm.mysql.Driver</driver>
+    <url>jdbc:mysql://localhost/octopus</url>
+    <username>root</username>
+    <password>root</password>
+    <poolGrowAmount>1</poolGrowAmount>
+    <poolMin>1</poolMin>
+    <poolMax>10</poolMax>
+    <checkQuery>select 1 from dual</checkQuery>
+    <timeout>100</timeout>
+   <vendor>mysql</vendor>
+  </datasource>  
+
+  <datasource>
+      <name>oracle</name>
+      <description>this is an oracle database</description>
+      <factoryClass>com.jeeves.connector.sql.SQLConnectionFactory</factoryClass>
+      <connectionClass>com.jeeves.connector.sql.SQLConnection</connectionClass>
+      <driver>oracle.jdbc.driver.OracleDriver</driver>
+      <url>jdbc:oracle:thin:@localhost:1521:maui</url>
+      <username>octopus</username>
+      <password>octopus</password>
+      <poolGrowAmount>1</poolGrowAmount>
+      <poolMin>1</poolMin>
+      <poolMax>10</poolMax>
+      <checkQuery>select 1 from dual</checkQuery>
+      <timeout>100</timeout>
+      <vendor>oracle</vendor>  
+   </datasource>
+   
+</datasources>
